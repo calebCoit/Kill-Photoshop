@@ -87,6 +87,31 @@ public class Picture extends SimplePicture
 	    		}
 	    	}
 		}
+	
+	public void darkenOrBrightenImage()
+		{
+			boolean continueProgram = true;
+			Scanner userInput = new Scanner(System.in);
+			int darkness = 0;
+			String question = "";
+			
+			System.out.println("welcome to  the shrekenator darkener 5000. this method lowers the darkness of an image to make it as spoooooky as possible");
+			System.out.println("enter a number between 0 and 255 to darken or birghten the image");
+			
+					darkness = userInput.nextInt();
+					
+					Pixel[][] pixels = this.getPixels2D();
+					for (Pixel[] rowArray : pixels)
+						{
+							for (Pixel pixelObj : rowArray)
+								{
+									pixelObj.setBlue(pixelObj.getBlue() - darkness);
+									pixelObj.setRed(pixelObj.getRed() - darkness);
+									pixelObj.setGreen(pixelObj.getGreen() - darkness);
+								}
+						}
+		}
+
 	public void keepOnlyBlue()
 		{
 			Pixel[][] pixels = this.getPixels2D();

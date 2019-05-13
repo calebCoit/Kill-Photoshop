@@ -115,6 +115,14 @@ public class PictureTester
     canvas.explore();
   }
   
+  public static void darkenOrBrightenImage()
+	  {
+		  Picture caterpillar = new Picture("shrekboiii.jpg");
+		  caterpillar.explore();
+		  caterpillar.darkenOrBrightenImage();
+		  caterpillar.explore();
+	  }
+  
   /** Method to test edgeDetection */
   public static void testEdgeDetection()
   {
@@ -130,16 +138,17 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
+	darkenOrBrightenImage();
     //testZeroBlue();
-	  testMirrorGull();
-	  //testMirrorArms();
-	  //testPictureDiagonal();
-	  //testMirrrorHorizontalBottomToTop();
-	  //testMirrorHorizontal();
-	  //testMirrorVerticalRightToLeft();
-	  //testFixUnderWater();
-	  //testGrayscale();
-	  // testNegatePicture();
+	//testMirrorGull(); 
+	//testMirrorArms();
+	//testPictureDiagonal();
+	//testMirrrorHorizontalBottomToTop();
+	//testMirrorHorizontal();
+	//testMirrorVerticalRightToLeft();
+	//testFixUnderWater();
+	//testGrayscale();
+	//testNegatePicture();
 	//testOnlyBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
